@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Information - Formula 1</title>
+    <link rel="stylesheet" href="visitor.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#tickets">Race Day Tickets</a></li>
+                <li><a href="#seating">Seating Maps</a></li>
+                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#communication">Communication</a></li>
+                <li><a href="#get-tickets-online">Get Tickets Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Race Day Tickets Section -->
+        <section id="tickets">
+            <h2>Race Day Tickets</h2>
+            <p><strong>Tickets for the Formula 1 races are available online. Check below for information on prices and ticket types:</strong></p>
+            <ul>
+                <li>General Admission: $100</li>
+                <li>VIP Experience: $500</li>
+                <li>Grandstand Seats: $250</li>
+            </ul>
+            <button onclick="showMoreInfo('tickets')">Learn More</button>
+            <div id="tickets-info" class="hidden">
+                <p>Tickets include access to various areas of the circuit. VIP tickets provide exclusive access to lounges and meet-and-greets with drivers.</p>
+            </div>
+        </section>
+
+        <!-- Seating Maps Section -->
+        <section id="seating">
+            <h2>Seating Maps</h2>
+            <p><strong>Find your ideal seat for the race. Check the map below:</strong></p>
+            <img src="images\map.jpg" alt="Seating Map" class="map-thumbnail" onclick="showFullMap()" />
+            <button onclick="showFullMap()">View Full Map</button>
+            <div id="seating-info" class="hidden">
+                <div class="map-overlay" onclick="hideFullMap()">
+                    <img src="images\map.jpg" alt="Seating Map Full" class="full-map" />
+                </div>
+                <p>The map shows various seating options including grandstands and VIP sections. Click outside the map to close.</p>
+            </div>
+        </section>
+
+        <!-- Transportation Section -->
+        <section id="transportation">
+            <h2>Transportation</h2>
+            <p><strong>There are several ways to get to the circuit:</strong></p>
+            <ul>
+                <li>Shuttle Buses: $15 each way</li>
+                <li>Public Transport: Metro and bus options available</li>
+                <li>Parking: Available at the venue for $20 per day</li>
+            </ul>
+            <button onclick="showMoreInfo('transportation')">Learn More</button>
+            <div id="transportation-info" class="hidden">
+                <p>Shuttle buses operate from main city points. Public transport options include metro lines and buses with direct access to the venue.</p>
+            </div>
+        </section>
+
+        <!-- Hotels Section -->
+        <section id="hotels">
+            <h2>Recommended Hotels</h2>
+            <p><strong>Here are some hotels near the race circuit for a comfortable stay:</strong></p>
+            <ul>
+                <li>The Ritz-Carlton - 5-star luxury hotel</li>
+                <li>Grand Hyatt - Conveniently located near the circuit</li>
+                <li>Budget Inn - Affordable, clean, and close to public transport</li>
+            </ul>
+            <button onclick="showMoreInfo('hotels')">View More Hotels</button>
+            <div id="hotels-info" class="hidden">
+                <p>For more information, visit our website or call the hotel directly for booking.</p>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities">
+            <h2>Things to Do Around the Circuit</h2>
+            <p><strong>Explore the best attractions near the race circuit:</strong></p>
+            <ul>
+                <li>Visit the local museums</li>
+                <li>Explore the nearby parks</li>
+                <li>Go shopping at the local markets</li>
+            </ul>
+            <button onclick="showMoreInfo('activities')">View More Activities</button>
+            <div id="activities-info" class="hidden">
+                <p>Take a walking tour around the circuit or visit nearby shopping districts and restaurants.</p>
+            </div>
+        </section>
+
+        <!-- Communication Section -->
+        <section id="communication">
+            <h2>Communication</h2>
+            <p><strong>Stay updated with the latest race information and announcements:</strong></p>
+            <ul>
+                <li>Follow us on social media for real-time updates.</li>
+                <li>Sign up for our newsletter to receive exclusive content.</li>
+                <li>Check the official Formula 1 website for live race stats.</li>
+            </ul>
+            <button onclick="showMoreInfo('communication')">Learn More</button>
+            <div id="communication-info" class="hidden">
+                <p>Our communication team is here to keep you informed and connected throughout the event. For queries, contact us via email or phone.</p>
+            </div>
+        </section>
+
+        <!-- Get Tickets Online Section -->
+        <section id="get-tickets-online">
+            <h2>Get Tickets Online</h2>
+            <p><strong>Book your tickets online for a seamless experience:</strong></p>
+            <ul>
+                <li>Easy and secure online payment options</li>
+                <li>Instant confirmation and e-ticket delivery</li>
+                <li>Flexible cancellation policies</li>
+            </ul>
+            <button onclick="window.location.href='https://www.formula1.com/tickets'">Book Tickets Now</button>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Formula 1. All rights reserved.</p>
+<div class="back-to-main-container">
+        <a href="index.html" class="back-to-main">Back to Main Page</a>
+    </div>
+    </footer>
+
+    <script src="visitor.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background for the page */
+    color: #333; /* Darker text color for readability */
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #0077b6; /* Blue color for headings */
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px 20px;
+    color: #555; /* Light gray for the text */
+}
+
+/* Styling for the Introduction Paragraph */
+.intro-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 15px; /* Reduced padding */
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.05); /* Very light gray/white background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-text:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove icons */
+.intro-text::before,
+.intro-text::after {
+    content: none; /* No icons before and after the text */
+}
+
+/* Champions Section */
+.champions-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 20px;
+    padding: 20px;
+}
+
+.champion-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    border: 2px solid #0077b6; /* Blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.champion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.champion-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #e1e1e1; /* Light border */
+}
+
+.champion-card h3 {
+    font-size: 1.5rem;
+    color: #0077b6; /* Blue color for champion names */
+    margin-top: 20px;
+}
+
+.champion-card p {
+    font-size: 1rem;
+    color: #777; /* Grey color for text under the name */
+    padding: 0 15px 15px; /* Reduced padding */
+}
+
+.champion-card .title {
+    font-weight: bold;
+    color: #1e40af; /* Accent blue for the title */
+}
+
+.champion-card .description {
+    font-size: 0.95rem;
+    color: #555; /* Darker gray color for the description */
+    padding: 10px 15px; /* Reduced padding */
+    text-align: justify;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .champions-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .champions-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #0077b6; /* Blue background for the header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0077b6; /* Blue background for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 15px; /* Reduced padding */
+}
+
+.back-link {
+    color: #ffffff; /* White color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+

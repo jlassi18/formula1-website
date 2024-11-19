@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Schedules & Results</title>
+    <link rel="stylesheet" href="race.css">
+</head>
+<body>
+
+    <!-- Race Schedules & Results Section -->
+    <section id="race-schedules">
+        <h2>Upcoming Races</h2>
+        <p><strong>Here are the upcoming Formula 1 races, including dates, times, and locations:</strong></p>
+
+        <div class="race-schedule">
+            <div class="race-card">
+                <h3>Saudi Arabian Grand Prix</h3>
+                <p><strong>Date:</strong> March 5, 2025</p>
+                <p><strong>Time:</strong> 10:00 PM GMT</p>
+                <p><strong>Location:</strong> Jeddah, Saudi Arabia</p>
+            </div>
+            <div class="race-card">
+                <h3>Bahrain Grand Prix</h3>
+                <p><strong>Date:</strong> March 19, 2025</p>
+                <p><strong>Time:</strong> 2:00 PM GMT</p>
+                <p><strong>Location:</strong> Bahrain International Circuit</p>
+            </div>
+            <div class="race-card">
+                <h3>Australian Grand Prix</h3>
+                <p><strong>Date:</strong> April 2, 2025</p>
+                <p><strong>Time:</strong> 6:00 AM GMT</p>
+                <p><strong>Location:</strong> Melbourne, Australia</p>
+            </div>
+            <div class="race-card">
+                <h3>Chinese Grand Prix</h3>
+                <p><strong>Date:</strong> April 16, 2025</p>
+                <p><strong>Time:</strong> 7:00 AM GMT</p>
+                <p><strong>Location:</strong> Shanghai International Circuit</p>
+            </div>
+            <div class="race-card">
+                <h3>Spanish Grand Prix</h3>
+                <p><strong>Date:</strong> May 7, 2025</p>
+                <p><strong>Time:</strong> 1:00 PM GMT</p>
+                <p><strong>Location:</strong> Circuit de Barcelona-Catalunya</p>
+            </div>
+            <!-- Add more races as needed -->
+        </div>
+    </section>
+
+    <!-- Race Results Section -->
+    <section id="race-results">
+        <h2>Recent Race Results</h2>
+        <p><strong>Here are the results of the most recent races:</strong></p>
+
+        <div class="race-results">
+            <div class="result-card">
+                <h3>Saudi Arabian Grand Prix 2024</h3>
+                <p><strong>Winner:</strong> Max Verstappen</p>
+                <p><strong>Second:</strong> Lewis Hamilton</p>
+                <p><strong>Third:</strong> Charles Leclerc</p>
+                <button onclick="toggleHistoricalData(this)">View Historical Data</button>
+                <div class="historical-data" style="display: none;">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Race Stats:</strong> Max Verstappen dominated the race...</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Australian Grand Prix 2024</h3>
+                <p><strong>Winner:</strong> Sebastian Vettel</p>
+                <p><strong>Second:</strong> Max Verstappen</p>
+                <p><strong>Third:</strong> George Russell</p>
+                <button onclick="toggleHistoricalData(this)">View Historical Data</button>
+                <div class="historical-data" style="display: none;">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Race Stats:</strong> Sebastian Vettel secured a thrilling victory...</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Miami Grand Prix 2024</h3>
+                <p><strong>Winner:</strong> Charles Leclerc</p>
+                <p><strong>Second:</strong> Max Verstappen</p>
+                <p><strong>Third:</strong> Lando Norris</p>
+                <button onclick="toggleHistoricalData(this)">View Historical Data</button>
+                <div class="historical-data" style="display: none;">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Race Stats:</strong> Charles Leclerc had an impressive race...</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Azerbaijan Grand Prix 2024</h3>
+                <p><strong>Winner:</strong> Lewis Hamilton</p>
+                <p><strong>Second:</strong> Sergio Perez</p>
+                <p><strong>Third:</strong> Carlos Sainz</p>
+                <button onclick="toggleHistoricalData(this)">View Historical Data</button>
+                <div class="historical-data" style="display: none;">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Race Stats:</strong> Lewis Hamilton took the win in a dramatic finish...</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <h3>Spanish Grand Prix 2024</h3>
+                <p><strong>Winner:</strong> Fernando Alonso</p>
+                <p><strong>Second:</strong> Max Verstappen</p>
+                <p><strong>Third:</strong> Charles Leclerc</p>
+                <button onclick="toggleHistoricalData(this)">View Historical Data</button>
+                <div class="historical-data" style="display: none;">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Race Stats:</strong> Fernando Alonso took a stunning victory...</p>
+                </div>
+            </div>
+
+            <!-- Add more results as needed -->
+        </div>
+    </section>
+<div class="back-to-main-container">
+        <a href="index.html" class="back-to-main">Back to Main Page</a>
+    </div>
+
+    <script src="race.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6; /* Blue background for the header */
+    color: white; /* White text color */
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1em;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hidden Content */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6; /* Blue background for footer */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* Thumbnail Map */
+.map-thumbnail {
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Full Map Overlay */
+.map-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Full Map Image with Zoom */
+.full-map {
+    width: 80%;
+    max-width: 800px;
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+/* Zoom on Hover for Full Map */
+.full-map:hover {
+    transform: scale(1.1);
+}
+
+.back-to-main {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    display: block; /* Make it a block-level element */
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center the link horizontally */
+    width: fit-content; /* Adjust width based on content */
+    padding: 10px;
+}
+
+.back-to-main:hover {
+    text-decoration: underline;
+}
